@@ -33,8 +33,8 @@ if (container.length){
         }
 
         parameters = [
-            // [ [1, 1, 0.5], 5 ],
-            // [ [0.95, 1, 0.5], 4 ],
+            [ [1, 1, 0.5], 5 ],
+            [ [0.95, 1, 0.5], 4 ],
             [ [0.90, 1, 0.5], 3 ],
             [ [0.85, 1, 0.5], 2 ],
             [ [0.80, 1, 0.5], 1 ]
@@ -60,6 +60,7 @@ if (container.length){
         renderer = new THREE.WebGLRenderer();
         renderer.setPixelRatio( window.devicePixelRatio );
         renderer.setSize( window.innerWidth, window.innerHeight );
+        renderer.setClearColor( 0xffffff, 1);
         container.append( renderer.domElement );
 
         document.addEventListener( 'mousemove', onDocumentMouseMove, false );
