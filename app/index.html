@@ -13,6 +13,7 @@
 
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/fullpage.js/jquery.fullPage.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -30,10 +31,21 @@
     <div class="layers">
         <div class="layer-0"></div>
         <div class="layer-1">
-            <div class="container">
-                <div class="title text-center">
-                    <img src="images/afm.jpg" alt="Alberto Francesco Motta" title="Alberto Francesco Motta" class="img-thumbnail">
-                    <h1>Alberto Francesco Motta</h1>
+            <div id="fullpage">
+                <div class="section">
+                    <div class="title text-center">
+                        <img src="images/afm.jpg" alt="Alberto Francesco Motta" title="Alberto Francesco Motta" class="img-thumbnail">
+                        <h1>Alberto Francesco Motta</h1>
+                    </div>
+                </div>
+                <div class="section text-center">
+                    <h1>Section 2</h1>
+                </div>
+                <div class="section text-center">
+                    <h1>Section 3</h1>
+                </div>
+                <div class="section text-center">
+                    <h1>Section 4</h1>
                 </div>
             </div>
         </div>
@@ -43,6 +55,9 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/three.js/three.min.js"></script>
+    <script src="/bower_components/fullpage.js/jquery.fullPage.js"></script>
+    <script src="/bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
+    <script src="/bower_components/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

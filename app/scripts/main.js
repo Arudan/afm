@@ -2,7 +2,7 @@
 var container = $('.layer-0');
 if (container.length){
     var container;
-    var camera, scene, renderer, particles, geometry, materials = [], parameters, i, h, color, size;
+    var camera, scene, renderer, particles, geometry, materials = [], parameters, i, h, color, size, sprite;
     var mouseX = 0, mouseY = 0;
 
     var windowHalfX = window.innerWidth / 2;
@@ -20,6 +20,8 @@ if (container.length){
         scene.fog = new THREE.FogExp2( 0x000000, 0.0007 );
 
         geometry = new THREE.Geometry();
+
+        sprite = THREE.ImageUtils.loadTexture("images/sprite.png");
 
         for ( i = 0; i < 2000; i ++ ) {
 
@@ -45,7 +47,7 @@ if (container.length){
             color = parameters[i][0];
             size  = parameters[i][1];
 
-            materials[i] = new THREE.PointCloudMaterial( { size: size } );
+            materials[i] = new THREE.PointCloudMaterial( { size: size, map: sprite, transparent : true } );
 
             particles = new THREE.PointCloud( geometry, materials[i] );
 
@@ -162,3 +164,7 @@ if (container.length){
 
     }
 }
+
+$(document).ready(function() {
+    $('#fullpage').fullpage();
+});
