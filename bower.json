@@ -6,7 +6,7 @@
     "modernizr": "~2.8.3",
     "three.js": "master",
     "fullpage.js": "master",
-    "tetris": "master"
+    "typed.js": "master"
   },
   "overrides": {
     "bootstrap-sass": {

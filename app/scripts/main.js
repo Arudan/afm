@@ -116,13 +116,8 @@ $(document).ready(function() {
         anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
         menu: '#myMenu'
     });
-    // $('.layer-0').blockrain({
-    //     theme: 'custom',
-    //     autoplay: true,
-    //     autoplayRestart: true,
-    //     speed: 20,
-    //     autoBlockWidth: true,
-    //     autoBlockSize: 24,
-    //
-    // });
+    $(".typed").typed({
+        strings: ["Web designer", "Full stack dev", "Alberto Francesco Motta"],
+        typeSpeed: 0
+    });
 });
